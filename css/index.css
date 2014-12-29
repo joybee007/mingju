@@ -8,10 +8,10 @@ body{background-color:#000;}
 #header .nav li a{color:#868686;}
 #header .nav li.active a{color:#fff;}
 
-
-
-
-
+#banner{padding-top:15px;}
+#banner .marquee-btn{display:block;width:46px;height:89px;background-image:url(../images/index_marquee_btns.png);background-repeat:no-repeat;margin-top:190px;}
+#banner .marquee-right{background-position:-46px 0;}
+#banner .marquee_div{width:828px;height:515px;}
 
 
 
