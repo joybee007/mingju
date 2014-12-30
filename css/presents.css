@@ -1,0 +1,48 @@
+
+#main{padding-top:40px;height:468px;padding-top:17px;}
+.presentList{width:927px;}
+.presentList .presentLi{width:301px;margin-right:8px;height:215px;border-bottom:4px solid black;position:relative;z-index:2;cursor:pointer;}
+.presentList .presentLi-0{background:url(../images/presents/0.jpg) no-repeat;}
+.presentList .presentLi-1{background:url(../images/presents/1.jpg) no-repeat;}
+.presentList .presentLi-2{background:url(../images/presents/2.jpg) no-repeat;}
+.presentList .presentLi-3{background:url(../images/presents/3.jpg) no-repeat;}
+.presentList .presentLi-4{background:url(../images/presents/4.jpg) no-repeat;}
+.presentList .presentLi-5{background:url(../images/presents/5.jpg) no-repeat;}
+
+.presentList .presentLi .presentMask{width:100%;height:100%;background:url(../images/presentMask.jpg) no-repeat;opacity:0;position:absolute;z-index:2;top:0;left:0;}
+.presentList .presentLi .presentDiv{width:252px;height:66px;border:4px solid #ffdc1c;position:absolute;top:19px;left:19px;z-index:4;}
+.presentList .presentLi .presentDl{width:228px;position:absolute;z-index:3;top:33px;left:37px;}
+.presentList .presentLi .presentDl dt{height:102px;}
+.presentList .presentLi .presentDl .e-title{color:#fff;}
+.presentList .presentLi .presentDl .e-title-big{font-size:21px;line-height:24px;}
+.presentList .presentLi .presentDl .e-title-small{font-size:16px;line-height:14px;}
+.presentList .presentLi .presentDl .ch-title{font-size:12px;line-height:18px;color:#ffdc1c;}
+.presentList .presentLi .presentDl dd{color:#fff;font-size:12px;line-height:18px;opacity:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
