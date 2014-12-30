@@ -2,7 +2,7 @@
 body{background-color:#000;}
 
 #webContent{width:920px;margin:0 auto;}
-
+#header{padding-top:50px;}
 #header .nav{width:520px;padding-top:17px;}
 #header .nav li{padding:0 22px;height:48px;line-height:48px;color:#868686;}
 #header .nav li a{color:#868686;}
@@ -12,8 +12,8 @@ body{background-color:#000;}
 #banner .marquee-btn{display:block;width:46px;height:89px;background-image:url(../images/index_marquee_btns.png);background-repeat:no-repeat;margin-top:190px;}
 #banner .marquee-right{background-position:-46px 0;}
 #banner .marquee_div{width:828px;height:515px;}
-
-
+#footer{padding-top:15px;}
+#footer .copy{text-align:center;color:#a2a2a2;font-size:12px;line-height:18px;}
 
 
 
