@@ -1,7 +1,7 @@
 
 #main{padding-top:40px;color:#868686;height:550px;}
 .nav-left{width:205px;padding-right:70px;}
-.contents{width:645px;}
+.contents{width:645px;height:530px;overflow:hidden;position:relative;z-index:2;}
 
 .nav-left li{line-height:18px;border-bottom:4px solid #868686;margin-bottom:28px;padding-bottom:10px;cursor:pointer;
 	-webkit-transition:all .15s linear;
@@ -12,14 +12,14 @@
 .nav-left li.active{border-color:#ffdc1c;color:#ffdc1c;}
 .nav-left li.hover{border-color:#ffdc1c;color:#ffdc1c;}
 
-.contents .project-content{display:none;line-height:16px;}
+.contents .project-content{display:none;line-height:16px;padding-right:10px;}
 .project-content .project-be-ch{padding-bottom:30px;}
 .project-content .project-be-ch li{padding-bottom:15px;}
-
-
-
-
-
+.contents .scrollBar{width:2px;height:100%;position:absolute;z-index:10;top:0;right:5px;}
+.contents .scrollBar .scrollBtn{width:100%;background-color:#ffdc1c;position:absolute;z-index:3;}
+.project-process{background:url(../images/project-process.gif) repeat-y center top;}
+.project-process li{width:570px;background-color:#000;border:1px solid #50c5d6;padding:5px 0;text-align:center;margin:0 auto;margin-bottom:24px;color:#aeaeae;}
+.project-process li.first-process{width:336px;}
 
 
 

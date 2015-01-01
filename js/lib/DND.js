@@ -28,12 +28,12 @@ function init(Class,$this,args){
 function DND(args){
 	init(DND,this,args);
 	var $layer=this.$layer=$(this.layer);
-	if(this.range.nodeType){
-		var _range=this.range;
+	if(this.range.jquery||this.range.nodeType){
+		var $range=$(this.range);
 		if(this.range.valueOf && this.range.valueOf()==document.documentElement){
 			this.range={
 				valueOf:function(_this){
-					var offset=$(_range).offset(),
+					var offset=$range.offset(),
 					ml=parseInt($layer.css('margin-left')) || 0,
 					mr=parseInt($layer.css('margin-right')) || 0,
 					mt=parseInt($layer.css('margin-top')) || 0,
@@ -41,24 +41,24 @@ function DND(args){
 					return {
 						minX:offset.left+document.documentElement.scrollLeft+document.body.scrollLeft,
 						minY:offset.top+document.documentElement.scrollTop+document.body.scrollTop,
-						maxX:offset.left+_range.clientWidth-_this.layer.offsetWidth-ml-mr+(document.documentElement.scrollLeft||document.body.scrollLeft),
-						maxY:offset.top+_range.clientHeight-_this.layer.offsetHeight-mt-mb+(document.documentElement.scrollTop||document.body.scrollTop)
+						maxX:offset.left+$range[0].clientWidth-_this.layer.offsetWidth-ml-mr+(document.documentElement.scrollLeft||document.body.scrollLeft),
+						maxY:offset.top+$range[0].clientHeight-_this.layer.offsetHeight-mt-mb+(document.documentElement.scrollTop||document.body.scrollTop)
 					};
 				}
 			};
 		}else{
 			this.range={
 				valueOf:function(_this){
-					var offset=$(_range).offset(),
-					ml=parseInt($layer.css('margin-left')) || 0,
-					mr=parseInt($layer.css('margin-right')) || 0,
-					mt=parseInt($layer.css('margin-top')) || 0,
-					mb=parseInt($layer.css('margin-bottom')) || 0;
+					var offset=$range.offset(),
+					ml=parseInt(_this.$layer.css('margin-left')) || 0,
+					mr=parseInt(_this.$layer.css('margin-right')) || 0,
+					mt=parseInt(_this.$layer.css('margin-top')) || 0,
+					mb=parseInt(_this.$layer.css('margin-bottom')) || 0;
 					return {
 						minX:offset.left,
 						minY:offset.top,
-						maxX:offset.left+_range.clientWidth-$layer.outerWidth()-ml-mr,
-						maxY:offset.top+_range.clientHeight-$layer.outerHeight()-mt-mb
+						maxX:offset.left+$range[0].clientWidth-$layer.outerWidth()-ml-mr,
+						maxY:offset.top+$range[0].clientHeight-$layer.outerHeight()-mt-mb
 					};
 				}
 			};
@@ -128,23 +128,23 @@ DND.prototype={
 		var ret;
 		if(this.onMove) ret=this.onMove(evt,this,{x:x,y:y});
 		if(ret===false) return false;
-		if(this.layer.offsetParent!=de){
-			var parentPos=$(this.layer.offsetParent).offset();
+		if(this.layer[0].offsetParent!=de){
+			var parentPos=$(this.layer[0].offsetParent).offset();
 		}else{
 			var parentPos={left:0,top:0};
 		}
 		if(this.mode!="V"){
-			this.layer.style.left=x-parentPos.left+"px";
+			this.layer.css('left',x-parentPos.left);
 		}
 		if(this.mode!="H"){
-			this.layer.style.top=y-parentPos.top+"px";
+			this.layer.css('top',y-parentPos.top);
 		}
 	},
 	stopDrag:function(evt){
 		$(document).unbind('mousemove',this.mousemoveHandler).unbind('mouseup',this.mouseupHandler);
 		$(window).unbind('blur',this.mouseupHandler);
-		if(this.layer.releaseCapture){
-			this.layer.releaseCapture();
+		if(this.layer[0].releaseCapture){
+			this.layer[0].releaseCapture();
 		}
 		$(this.layer).removeClass(this.className);
 		if(this.onDragStop) this.onDragStop(this);
