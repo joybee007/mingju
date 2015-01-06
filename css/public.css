@@ -1,7 +1,7 @@
 
 body{background-color:#000;}
 
-#webContent{width:920px;margin:0 auto;}
+#webContent{width:920px;margin:0 auto;position:relative;z-index:2;}
 
 #header{padding-top:50px;}
 #header .nav{width:520px;padding-top:17px;}

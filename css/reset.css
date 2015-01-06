@@ -5,9 +5,9 @@ a{text-decoration:none;}
 a img{border:none;}
 table{border-collapse:collapse;}
 .clear{clear:both;}
-.red{color:#f36700;}
-.blue{color:#40b1e6;}
-.orange{color:#f90;}
+.gray{color:#898989;}
+.white{color:#fff;}
+.yellow{color:#ffdc1c;}
 .blank{height:10px;}
 .nobd{border:none;}
 /*文字排版*/
