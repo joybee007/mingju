@@ -26,7 +26,13 @@ $(function(){
 		}
 	}
 	$('.main-switch').click(setListPosition);
-
-	
+	$('#main-jobs .jobs li').each(function(i,a){
+		$(a).click(function(){
+			$('#partner-list li.pl-li').hide().eq(i).show();
+		});
+	});
+	$('#partner-list .pl-l-close').click(function(){
+		$(this).parent().hide();
+	});
 });
 
