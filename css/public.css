@@ -4,9 +4,12 @@ body{background-color:#000;}
 #webContent{width:920px;margin:0 auto;position:relative;z-index:2;}
 
 #header{padding-top:50px;}
-#header .nav{width:520px;padding-top:17px;}
-#header .nav li{padding:0 22px;height:48px;line-height:48px;color:#868686;}
+#header .nav{width:520px;padding-top:27px;padding-bottom: 10px;}
+#header .nav li{width: 80px;border-right: 1px solid #333;height:28px;line-height:28px;color:#868686;text-align: center;}
 #header .nav li a{color:#868686;}
+#header .nav li.last-nav{border: none;}
 #header .nav li.active a{color:#fff;}
+#header .nav li a .nav-ch{}
+#header .nav li a .nav-e{display:none;}
 #footer{padding-top:15px;}
 #footer .copy{text-align:center;color:#a2a2a2;font-size:12px;line-height:18px;}
