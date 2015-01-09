@@ -1,8 +1,5 @@
 
 $(function(){
-
-
-
 	var map = new BMap.Map("map");  // 创建Map实例
 	//map.setMapStyle({style:'grayscale'});
 	// 创建地址解析器实例
@@ -17,7 +14,7 @@ $(function(){
 			  title : "北京首府铭居建筑装饰工程有限公司" , // 信息窗口标题
 			  enableMessage:false
 			};
-			var infoWindow = new BMap.InfoWindow("地址：北京市东城区王府井大街88号乐天银泰百货八层", opts);  // 创建信息窗口对象 
+			var infoWindow = new BMap.InfoWindow("地址：北京市东城区王府井大街88号乐天银泰百货八层", opts);  // 创建信息窗口对象
 			map.centerAndZoom(point, 16);
 			map.addOverlay(new BMap.Marker(point));
 			map.openInfoWindow(infoWindow,point); //开启信息窗口
@@ -32,7 +29,7 @@ if (point) {
 			  title : "北京首府铭居建筑装饰工程有限公司" , // 信息窗口标题
 			  enableMessage:false
 			};
-			var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区 318国际艺术园区 东区4排7号", opts);  // 创建信息窗口对象 
+			var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区 318国际艺术园区 东区4排7号", opts);  // 创建信息窗口对象
 			map.centerAndZoom(point, 16);
 			map.addOverlay(new BMap.Marker(point));
 			map.openInfoWindow(infoWindow,point); //开启信息窗口
