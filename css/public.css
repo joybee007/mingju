@@ -5,11 +5,27 @@ body{background-color:#000;}
 
 #header{padding-top:50px;}
 #header .nav{width:520px;padding-top:27px;padding-bottom: 10px;}
-#header .nav li{width: 80px;border-right: 1px solid #333;height:28px;line-height:28px;color:#868686;text-align: center;}
+#header .nav li{width: 80px;border-right: 1px solid #333;height:28px;line-height:28px;color:#868686;text-align: center;position: relative;z-index: 2;overflow: hidden;}
 #header .nav li a{color:#868686;}
 #header .nav li.last-nav{border: none;}
 #header .nav li.active a{color:#fff;}
-#header .nav li a .nav-ch{}
-#header .nav li a .nav-e{display:none;}
+#header .nav li a .nav-ch,
+#header .nav li a .nav-e{position: absolute;z-index: 2;width: 100%;height: 100%;top: 0;left: 0;background-color: #000;}
+#header .nav li a .nav-ch{
+	z-index: 3;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+}
+/*#header .nav li.active .nav-ch{display: none;}*/
+#header .nav li a:hover{color: #ccc;}
+#header .nav li a:hover .nav-ch{
+	transform: scale(1.3,1.3);
+	-webkit-transform: scale(1.3,1.3);
+	-moz-transform: scale(1.3,1.3);
+	-o-transform: scale(1.3,1.3);
+	opacity:0;
+}
 #footer{padding-top:15px;}
 #footer .copy{text-align:center;color:#a2a2a2;font-size:12px;line-height:18px;}
