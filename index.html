@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/public.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/lib/y_marquee.js"></script>
 	<script type="text/javascript" src="js/public.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
@@ -25,7 +27,43 @@
 		</div>
 		<div id="banner" class="clearfix">
 			<a href="javascript:void(0)" class="marquee-btn marquee-left fl"></a>
-			<div class="marquee_div fl"></div>
+			<div class="marquee_div fl">
+				<ul id="marqueebox" class="pos-a">
+					<li class="pos-a"><img src="images/index-marquee/0.jpg" alt="" /></li>
+					<li class="pos-a"><img src="images/index-marquee/1.jpg" alt="" /></li>
+					<li class="pos-a"><img src="images/index-marquee/2.jpg" alt="" /></li>
+					<li class="pos-a"><img src="images/index-marquee/3.jpg" alt="" /></li>
+					<li class="pos-a"><img src="images/index-marquee/4.jpg" alt="" /></li>
+					<li class="pos-a"><img src="images/index-marquee/5.jpg" alt="" /></li>
+				</ul>
+				<ul id="marquee-text" class="pos-a">
+					<li>
+						<p class="marquee-text-index-short">ARCHITECTURAL</p>
+						<p class="marquee-text-index-long">STRUCTURE</p>
+					</li>
+					<li>
+						<p class="marquee-text-index-short">ART SOFT</p>
+						<p class="marquee-text-index-long">DECORATION</p>
+					</li>
+					<li>
+						<p class="marquee-text-index-short">PRIVATE</p>
+						<p class="marquee-text-index-long">CUSTOM-MADE<br />MANSION</p>
+					</li>
+					<li>
+						<p class="marquee-text-index-short">HOTEL</p>
+						<p class="marquee-text-index-long">DESIGN</p>
+					</li>
+					<li>
+						<p class="marquee-text-index-short">CLUB</p>
+						<p class="marquee-text-index-long">DESIGN</p>
+					</li>
+					<li>
+						<p class="marquee-text-index-short">OFFICE SPACE</p>
+						<p class="marquee-text-index-long none"></p>
+					</li>
+				</ul>
+				<div class="marquee-mask pos-a"></div>
+			</div>
 			<a href="javascript:void(0)" class="marquee-btn marquee-right fl"></a>
 		</div>
 		<div id="footer">
