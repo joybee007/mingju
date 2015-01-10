@@ -53,7 +53,7 @@
 	opacity:1;
 }
 
-#pop{width:617px;min-height:500px;padding-top:40px;background-color:#FFF;position:absolute;z-index:1000;top:20px;left:50%;margin-left:-308px;}
+#pop{width:617px;min-height:500px;padding-top:40px;background-color:#FFF;position:absolute;z-index:1000;top:20px;left:50%;margin-left:-308px;display: none;}
 .pop-close,
 .pop-next,
 .pop-prev{width:48px;height:48px;position:absolute;z-index:23;right:-48px;background-image:url(../images/present-pop-btns.png);background-repeat:no-repeat;cursor:pointer;}
@@ -62,17 +62,16 @@
 .pop-prev{top:163px;background-position:0 -98px;}
 
 #pop ul.popList{width:518px;margin:0 auto;}
-#pop ul.popList li.popLi{}
+#pop ul.popList li.popLi{padding-bottom: 30px;}
+#pop ul.popList li.popLi h2{font-size: 21px;color: #ffdc1c;font-weight: normal;line-height: 24px;padding-bottom: 25px;}
+#pop ul.popList li.popLi h4{font-size: 12px;color: #000;line-height: 40px;border-bottom: 1px solid #000;margin-bottom: 12px;}
+#pop ul.popList li.popLi .pop-text{font-size: 12px;color: #939393;line-height: 18px;}
+#pop ul.popList li.popLi .pop-img{padding-top: 25px;padding-bottom: 55px;overflow: hidden;}
 
 
 
 
-
-
-
-
-
-#mask{position:absolute;top:0;left:0;width:100%;height:100%;z-index:999;background-color:black;opacity:.3;}
+#mask{position:absolute;top:0;left:0;width:100%;height:100%;z-index:999;background-color:black;opacity:.3;display: none;}
 
 
 

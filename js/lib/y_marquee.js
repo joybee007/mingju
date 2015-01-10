@@ -32,8 +32,19 @@
 				},6000);
 			}
 			function go(a){
-
+				var i=a+currentIndex;
+				while(i<0){
+					i+=length;
+				}
+				i=i%length;
+				show(i);
 			}
+			options.prev&&$(options.prev).on('click',function(){
+				go(-1);
+			});
+			options.next&&$(options.next).on('click',function(){
+				go(1);
+			});
 			list.eq(0).css({zIndex:zIndex}).show();
 			return this;
 		}
