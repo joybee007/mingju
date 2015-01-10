@@ -3,11 +3,11 @@
 .nav-left{width:205px;padding-right:70px;}
 .contents{width:645px;height:530px;overflow:hidden;position:relative;z-index:2;}
 
-.nav-left li{line-height:18px;border-bottom:4px solid #868686;margin-bottom:28px;padding-bottom:10px;cursor:pointer;
+.nav-left li{line-height:18px;border-bottom:4px solid #868686;margin-bottom:28px;padding-bottom:10px;cursor:pointer;zoom:1;
+	transition:all .15s linear;
 	-webkit-transition:all .15s linear;
 	-moz-transition:all .15s linear;
 	-o-transition:all .15s linear;
-	transition:all .15s linear;
 }
 .nav-left li.active{border-color:#ffdc1c;color:#ffdc1c;}
 .nav-left li.hover{border-color:#ffdc1c;color:#ffdc1c;}
