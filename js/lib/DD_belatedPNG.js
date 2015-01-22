@@ -15,7 +15,6 @@
 PLEASE READ:
 Absolutely everything in this script is SILLY.  I know this.  IE's rendering of certain pixels doesn't make sense, so neither does this code!
 */
-
 var DD_belatedPNG = {
 	ns: 'DD_belatedPNG',
 	imgSize: {},
@@ -43,7 +42,7 @@ var DD_belatedPNG = {
 			screenStyleSheet.addRule(this.ns + '\\:shape', 'position:absolute;');
 			screenStyleSheet.addRule('img.' + this.ns + '_sizeFinder', 'behavior:none; border:none; position:absolute; z-index:-1; top:-10000px; visibility:hidden;'); /* large negative top value for avoiding vertical scrollbars for large images, suggested by James O'Brien, http://www.thanatopsic.org/hendrik/ */
 			this.screenStyleSheet = screenStyleSheet;
-			
+
 			/* Add a print-media stylesheet, for preventing VML artifacts from showing up in print (including preview). */
 			/* Thanks to R閙i Pr関ost for automating this! */
 			printStyleSheet = document.createElement('style');
@@ -116,7 +115,7 @@ var DD_belatedPNG = {
 		handlers = {resize: 'vmlOffsets', move: 'vmlOffsets'};
 		if (el.nodeName == 'A') {
 			moreForAs = {mouseleave: 'handlePseudoHover', mouseenter: 'handlePseudoHover', focus: 'handlePseudoHover', blur: 'handlePseudoHover'};
-			for (a in moreForAs) {			
+			for (a in moreForAs) {
 				if (moreForAs.hasOwnProperty(a)) {
 					handlers[a] = moreForAs[a];
 				}

@@ -1,7 +1,7 @@
 #main{background: url(../images/aboutus-bg.jpg) 0 10px no-repeat;padding-top: 62px;padding-bottom: 135px;}
 #main .about-content{color: #fff;width: 788px;margin: auto;line-height: 24px;}
-#main .about-content .scroll{height: 469px;position: relative;z-index: 2;padding: 0 15px 0 0;}
-.about-content .scrollBar{width:2px;height:460px;position:absolute;z-index:10;top:5px;right:5px;}
+#main .about-content .scroll{height: 459px;position: relative;z-index: 2;padding: 10px 15px 0 0;}
+.about-content .scrollBar{width:2px;height:450px;position:absolute;z-index:10;top:5px;right:5px;}
 .about-content .scrollBar .scrollBtn{width:100%;background-color:#ffdc1c;position:absolute;z-index:3;}
 h1{padding-top: 8px;line-height: 22px;border-bottom: 4px solid #ffdc1c;width: 248px;font-size: 12px;font-weight: normal;margin-left: 15px;}
 .bdb1{border-bottom: 1px solid #6e6e6e;}
