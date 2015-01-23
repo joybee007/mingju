@@ -105,6 +105,8 @@ h2.pl-title{font-weight:normal;font-size:21px;padding-bottom:40px;}
 .pl-intro-list .pl-intro-text .pl-intro-list-ch{font-size:16px;line-height:38px;}
 .pl-intro-list .pl-intro-text .pl-intro-list-e{font-size:12px;line-height:20px;}
 .pl-info{line-height:26px;}
+.pl-info a{color: #FFFFFF;}
+.pl-info a:hover{color: #898989;text-decoration: underline;}
 .pl-info-0{width:690px;}
 .pl-info-1{width:230px;}
 .pl-info-2{width:465px;}
