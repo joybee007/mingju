@@ -4,7 +4,7 @@
 h1{float:left;line-height:24px;font-size:20px;color:#fff;font-weight:normal;padding:0 45px 0 66px;}
 .main-title-ch{position:absolute;z-index:2;top:28px;left:228px;color:#ffdc1c;font-size:12px;line-height:24px;}
 .pluses{width:139px;height:14px;background:url(../images/pluses.gif) no-repeat;margin:6px 0 0 0;}
-.main-switch{width:58px;height:18px;border:1px solid #eecd1a;border-radius:9px;margin-left:66px;margin-top:10px;padding:1px;cursor:pointer;}
+.main-switch{width:58px;height:18px;border:1px solid #eecd1a;border-radius:10px;margin-left:66px;margin-top:10px;padding:1px;cursor:pointer;}
 .main-switch-btn{width:18px;height:18px;border-radius:9px;background-color:#eecd1a;}
 .main-switch,
 .main-switch-btn{

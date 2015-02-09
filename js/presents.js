@@ -174,6 +174,14 @@ $(function(){
 			ci=$('#pop .popLi:visible .pop-img ul li:visible').index();
 		showImg(ul,ci-1);
 	});
-
+	$('#pop .btns div').hover(function(){
+		$(this).addClass('hover');
+	},function(){
+		$(this).removeClass('hover mousedown');
+	}).on('mousedown',function(){
+		$(this).addClass('mousedown');
+	}).on('mouseup',function(){
+		$(this).removeClass('mousedown');
+	});
 
 });
