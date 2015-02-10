@@ -55,7 +55,7 @@ $(function(){
 				img:[
 					{
 						name:'钢筋',
-						img:4
+						img:3
 					},
 					{
 						name:'浇筑',
@@ -79,13 +79,13 @@ $(function(){
 					},
 					{
 						name:'室外',
-						img:17
+						img:18
 					}
 				]
 			}
 		],
 		imgPath='../images/presents/pop/';
-	
+
 	$('#pop .pop-close').click(function(){
 		$('#pop,#mask').hide();
 	});
@@ -119,6 +119,10 @@ $(function(){
 				}
 				li.appendTo('#pop .popList');
 			});
+			$('img').on('contextmenu dragstart',function(){
+				return false;
+			});
+			$(document).on('copy',function(){return false});
 		}
 	});
 	var animated=false;
@@ -170,7 +174,14 @@ $(function(){
 			ci=$('#pop .popLi:visible .pop-img ul li:visible').index();
 		showImg(ul,ci-1);
 	});
-	
-	
-	
+	$('#pop .btns div').hover(function(){
+		$(this).addClass('hover');
+	},function(){
+		$(this).removeClass('hover mousedown');
+	}).on('mousedown',function(){
+		$(this).addClass('mousedown');
+	}).on('mouseup',function(){
+		$(this).removeClass('mousedown');
+	});
+
 });

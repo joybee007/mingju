@@ -22,7 +22,7 @@ $(function(){
 		},
 		enableMessage:false
 	};
-	var infoWindow = new BMap.InfoWindow('<table class="f12 map-infoWindow"><tr><td width="60">ADD</td><td>北京市朝阳区318国际艺术园区 东区4排7号</td></tr><tr><td>TEL</td><td>+86-(10)84569189</td></tr><tr><td>E-mail</td><td><a href="mailto:hjj@shoufumingju.com">hjj@shoufumingju.com</a></td></tr><tr><td>Hot Line</td><td>400-668-8888</td></tr></table>', opts);
+	var infoWindow = new BMap.InfoWindow('<table class="f12 map-infoWindow"><tr><td width="60">ADD</td><td>北京市朝阳区318国际艺术园区 东区4排7号</td></tr><tr><td>TEL</td><td>+86-(10)84569189</td></tr><tr><td>E-mail</td><td><a href="mailto:hjj@shoufumingju.com">hjj@shoufumingju.com</a></td></tr><tr><td>Hot Line</td><td>400-635-0517</td></tr></table>', opts);
 	// 创建信息窗口对象
 	map.centerAndZoom(point, 14);
 	map.addOverlay(marker);

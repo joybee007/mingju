@@ -31,7 +31,7 @@ $(function(){
 			.find('.jobs-4').delay(400).animate({top:154},300).animate({left:0},300).animate({top:308},300);
 		}
 	}
-	$('.main-switch').click(setListPosition);
+	$('.main-switch').click(setListPosition).click();
 	$('#main-jobs .jobs li').each(function(i,a){
 		$(a).click(function(){
 			$('#partner-list li.pl-li').hide().eq(i).show();
