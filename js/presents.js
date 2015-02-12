@@ -32,7 +32,7 @@ $(function(){
 	var exImgs=[
 			{
 				name:'办公空间',
-				img:8
+				img:7
 			},
 			{
 				name:'会所设计',
