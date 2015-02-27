@@ -71,7 +71,7 @@ $(function(){
 					},
 					{
 						name:'室内',
-						img:16
+						img:15
 					},
 					{
 						name:'木作',

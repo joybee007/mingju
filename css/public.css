@@ -4,7 +4,7 @@ body{background-color:#000;}
 #webContent{width:920px;margin:0 auto;position:relative;z-index:2;}
 
 #header{padding-top:50px;}
-#header .nav{width:520px;padding-top:27px;padding-bottom: 10px;}
+#header .nav{width:520px;padding-top:47px;padding-bottom: 10px;}
 #header .nav li{width: 80px;border-right: 1px solid #333;height:28px;line-height:28px;color:#868686;text-align: center;position: relative;z-index: 2;overflow: hidden;}
 #header .nav li a{color:#868686;}
 #header .nav li.last-nav{border: none;}
