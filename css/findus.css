@@ -3,8 +3,8 @@ h1{border-bottom:1px solid #898989;line-height:60px;color:#fff;font-size:21px;pa
 .findus-text{padding-left:120px;line-height:18px;}
 
 #map{width:920px;height:288px;overflow:hidden;}
-.map-infoWindow{width: 200px;margin: auto;}
-.map-infoWindow td{vertical-align: top;line-height: 14px;padding: 4px 0;}
+.map-infoWindow{width: 220px;margin: auto;}
+.map-infoWindow td{vertical-align: top;line-height: 14px;padding: 4px;}
 .map-infoWindow td a{color: #000;}
 .map-infoWindow td a:hover{text-decoration: underline;}
 
