@@ -24,6 +24,7 @@ h1{float:left;line-height:24px;font-size:20px;color:#fff;font-weight:normal;padd
 .jobs-2{top:154px;}
 .jobs-3{top:231px;}
 .jobs-4{top:308px;}
+.jobs-5{top: 385px;}
 .jobs li:hover .jobs-title{color:#fff;}
 
 
@@ -33,11 +34,13 @@ h1{float:left;line-height:24px;font-size:20px;color:#fff;font-weight:normal;padd
 .jobs-2 .jobs-style{background-position:0 -94px;}
 .jobs-3 .jobs-style{background-position:0 -141px;}
 .jobs-4 .jobs-style{background-position:0 -188px;}
+.jobs-5 .jobs-style{background-position:0 -94px;}
 .jobs-0:hover .jobs-style{background-position:0 -235px;}
 .jobs-1:hover .jobs-style{background-position:0 -282px;}
 .jobs-2:hover .jobs-style{background-position:0 -329px;}
 .jobs-3:hover .jobs-style{background-position:0 -376px;}
 .jobs-4:hover .jobs-style{background-position:0 -423px;}
+.jobs-5:hover .jobs-style{background-position:0 -329px;}
 
 .jobs-title{color:#898989;}
 .jobs-title-e{line-height:18px;font-size:12px;}
