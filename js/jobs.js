@@ -18,7 +18,7 @@ $(function(){
 			}).end()
 			.find('.jobs-3').delay(800).animate({top:154},300).animate({left:275},300).animate({top:225},300).end()
 			.find('.jobs-4').delay(600).animate({top:154},300).animate({left:290},300).animate({top:42},300).end()
-			.find('.jobs-5').delay(400).animate({top:154},300).animate({left:541},300).animate({top:247},300);
+			.find('.jobs-5').delay(400).animate({top:154},300).animate({left:561},300).animate({top:225},300);
 		}else{
 			$('.main-switch').removeClass('main-switch-open');
 			$('.jobs-bg-div').fadeOut(800);
