@@ -6,7 +6,7 @@ $(function(){
 		transitionSupport=transitionSupport||arr[i] in div.style;
 	}
 	if(!transitionSupport){
-		$('#header .nav li a').hover(function(){
+		$('#header').find('.nav li a').hover(function(){
 			$(this).find('.nav-ch').stop(true,true).fadeOut('fast');
 		},function(){
 			$(this).find('.nav-ch').stop(true,true).fadeIn('fast');
