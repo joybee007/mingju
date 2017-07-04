@@ -44,7 +44,7 @@ $(function () {
 			},
 			{
 				name: '私人定制府邸',
-				img: 9
+				img: 10
 			},
 			{
 				name: '艺术软装',
